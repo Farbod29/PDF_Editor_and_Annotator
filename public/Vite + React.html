@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_B32SHW"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="/Users/farbodaprin/Desktop/react-pspdf/src/index.css">:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+</style><style>
+@keyframes slide-in-one-tap {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.trust-hide-gracefully {
+  opacity: 0;
+}
+
+.trust-wallet-one-tap .hidden {
+    display: none;
+  }
+
+.trust-wallet-one-tap .semibold {
+    font-weight: 500;
+  }
+
+.trust-wallet-one-tap .binance-plex {
+    font-family: 'Binance';
+  }
+
+.trust-wallet-one-tap .rounded-full {
+    border-radius: 50%;
+  }
+
+.trust-wallet-one-tap .flex {
+    display: flex;
+  }
+
+.trust-wallet-one-tap .flex-col {
+    flex-direction: column;
+  }
+
+.trust-wallet-one-tap .items-center {
+    align-items: center;
+  }
+
+.trust-wallet-one-tap .space-between {
+    justify-content: space-between;
+  }
+
+.trust-wallet-one-tap .justify-center {
+    justify-content: center;
+  }
+
+.trust-wallet-one-tap .w-full {
+    width: 100%;
+  }
+
+.trust-wallet-one-tap .box {
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+    width: 384px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1020;
+  }
+
+.trust-wallet-one-tap .header {
+    gap: 15px;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 18px;
+  }
+
+.trust-wallet-one-tap .header .left-items {
+      gap: 15px
+    }
+
+.trust-wallet-one-tap .header .title {
+      color: #1E2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+.trust-wallet-one-tap .header .subtitle {
+      color: #474D57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .header .close {
+      color: #1E2329;
+      cursor: pointer;
+    }
+
+.trust-wallet-one-tap .body {
+    padding: 9px 18px;
+    gap: 10px;
+
+  }
+
+.trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+.trust-wallet-one-tap .body .right-items .wallet-title {
+        color: #1E2329;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .body .right-items .wallet-subtitle {
+        color: #474D57;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .connect-indicator {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+.trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474D57;
+    }
+
+.trust-wallet-one-tap .loading-color {
+    color: #FFF;
+  }
+
+.trust-wallet-one-tap .button {
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(5, 0, 255);
+    border-color: rgb(229, 231, 235);
+    cursor: pointer;
+    text-align: center;
+    height: 45px;
+  }
+
+.trust-wallet-one-tap .button .button-text {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .footer {
+    margin: 20px 30px;
+  }
+
+.trust-wallet-one-tap .check-icon {
+    color: #FFF;
+  }
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+</style><style data-pspdfkit="true">
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Meddon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff) format('woff');
+  }
+  </style><style data-pspdfkit="true">
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Meddon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff) format('woff');
+  }
+  </style><style data-pspdfkit="true">
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Meddon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff) format('woff');
+  }
+  </style><style data-pspdfkit="true">
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Meddon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff) format('woff');
+  }
+  </style><style data-pspdfkit="true">
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Meddon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff) format('woff');
+  }
+  </style><style data-pspdfkit="true">
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Caveat-Bold.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/MarckScript-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Meddon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Meddon-Regular.woff) format('woff');
+  }
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff2) format('woff2'),
+         url(http://localhost:5173//pspdfkit-lib/Pacifico-Regular.woff) format('woff');
+  }
+  </style></head>
+  <body>
+    <div id="root"><div class="App"><div class="pdf-viewer-container" style=""></div> </div></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+<vite-error-overlay><template shadowrootmode="open"><div class="backdrop" part="backdrop"><div class="window" part="window"><pre class="message" part="message"><span class="plugin" part="plugin">[plugin:vite:react-babel] </span><span class="message-body" part="message-body">/Users/farbodaprin/Desktop/react-pspdf/src/PDFViewer.jsx: Unexpected token (25:2)
+  28 |     border: 1px solid green; /* Green border for debugging */</span></pre><pre class="file" part="file"><a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/src/PDFViewer.jsx:25:2</a></pre><pre class="frame" part="frame">23 |    }, []);
+24 |    // Your PDF will be rendered within this PDF.
+25 |    .pdf-viewer-container {
+   |    ^
+26 |      width: 100%;
+27 |      height: 100vh;</pre><pre class="stack" part="stack">    at constructor (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:359:19</a>)
+    at JSXParserMixin.raise (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:3266:19</a>)
+    at JSXParserMixin.unexpected (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:3286:16</a>)
+    at JSXParserMixin.parseExprAtom (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10983:16</a>)
+    at JSXParserMixin.parseExprAtom (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:6818:20</a>)
+    at JSXParserMixin.parseExprSubscripts (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10615:23</a>)
+    at JSXParserMixin.parseUpdate (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10600:21</a>)
+    at JSXParserMixin.parseMaybeUnary (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10580:23</a>)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10434:61</a>)
+    at JSXParserMixin.parseExprOps (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10439:23</a>)
+    at JSXParserMixin.parseMaybeConditional (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10416:23</a>)
+    at JSXParserMixin.parseMaybeAssign (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10379:21</a>)
+    at JSXParserMixin.parseExpressionBase (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10333:23</a>)
+    at <a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10329:39</a>
+    at JSXParserMixin.allowInAnd (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:11946:16</a>)
+    at JSXParserMixin.parseExpression (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:10329:17</a>)
+    at JSXParserMixin.parseStatementContent (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12390:23</a>)
+    at JSXParserMixin.parseStatementLike (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12257:17</a>)
+    at JSXParserMixin.parseStatementListItem (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12237:17</a>)
+    at JSXParserMixin.parseBlockOrModuleBlockBody (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12810:61</a>)
+    at JSXParserMixin.parseBlockBody (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12803:10</a>)
+    at JSXParserMixin.parseBlock (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12791:10</a>)
+    at JSXParserMixin.parseFunctionBody (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:11634:24</a>)
+    at JSXParserMixin.parseFunctionBodyAndFinish (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:11620:10</a>)
+    at <a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12935:12</a>
+    at JSXParserMixin.withSmartMixTopicForbiddingContext (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:11928:14</a>)
+    at JSXParserMixin.parseFunction (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12934:10</a>)
+    at JSXParserMixin.parseFunctionStatement (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12619:17</a>)
+    at JSXParserMixin.parseStatementContent (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12281:21</a>)
+    at JSXParserMixin.parseStatementLike (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12257:17</a>)
+    at JSXParserMixin.parseModuleItem (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12234:17</a>)
+    at JSXParserMixin.parseBlockOrModuleBlockBody (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12810:36</a>)
+    at JSXParserMixin.parseBlockBody (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12803:10</a>)
+    at JSXParserMixin.parseProgram (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12131:10</a>)
+    at JSXParserMixin.parseTopLevel (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:12121:25</a>)
+    at JSXParserMixin.parse (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:13929:10</a>)
+    at parse (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/parser/lib/index.js:13963:38</a>)
+    at parser (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/core/lib/parser/index.js:41:34</a>)
+    at parser.next (&lt;anonymous&gt;)
+    at normalizeFile (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37</a>)
+    at normalizeFile.next (&lt;anonymous&gt;)
+    at run (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/core/lib/transformation/index.js:22:50</a>)
+    at run.next (&lt;anonymous&gt;)
+    at transform (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/core/lib/transform.js:22:33</a>)
+    at transform.next (&lt;anonymous&gt;)
+    at step (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/gensync/index.js:261:32</a>)
+    at <a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/gensync/index.js:273:13</a>
+    at async.call.result.err.err (<a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/gensync/index.js:223:11</a>)
+    at <a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/gensync/index.js:189:28</a>
+    at <a class="file-link">/Users/farbodaprin/Desktop/react-pspdf/node_modules/@babel/core/lib/gensync-utils/async.js:67:7</a></pre><div class="tip" part="tip">Click outside, press <kbd>Esc</kbd> key, or fix the code to dismiss.<br>You can also disable this overlay by setting <code part="config-option-name">server.hmr.overlay</code> to <code part="config-option-value">false</code> in <code part="config-file-name">vite.config.js</code>.</div></div><style>
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  --monospace: 'SFMono-Regular', Consolas,
+  'Liberation Mono', Menlo, Courier, monospace;
+  --red: #ff5555;
+  --yellow: #e2aa53;
+  --purple: #cfa4ff;
+  --cyan: #2dd9da;
+  --dim: #c9c9c9;
+
+  --window-background: #181818;
+  --window-color: #d8d8d8;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.window {
+  font-family: var(--monospace);
+  line-height: 1.5;
+  max-width: 80vw;
+  color: var(--window-color);
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 2.5vh 4vw;
+  position: relative;
+  background: var(--window-background);
+  border-radius: 6px 6px 8px 8px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  overflow: hidden;
+  border-top: 8px solid var(--red);
+  direction: ltr;
+  text-align: left;
+}
+
+pre {
+  font-family: var(--monospace);
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre.frame::-webkit-scrollbar {
+  display: block;
+  height: 5px;
+}
+
+pre.frame::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+}
+
+pre.frame {
+  scrollbar-width: thin;
+}
+
+.message {
+  line-height: 1.3;
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+
+.message-body {
+  color: var(--red);
+}
+
+.plugin {
+  color: var(--purple);
+}
+
+.file {
+  color: var(--cyan);
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.frame {
+  color: var(--yellow);
+}
+
+.stack {
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.tip {
+  font-size: 13px;
+  color: #999;
+  border-top: 1px dotted #999;
+  padding-top: 13px;
+  line-height: 1.8;
+}
+
+code {
+  font-size: 13px;
+  font-family: var(--monospace);
+  color: var(--yellow);
+}
+
+.file-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+kbd {
+  line-height: 1.5;
+  font-family: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: rgb(38, 40, 44);
+  color: rgb(166, 167, 171);
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.25rem;
+  border-width: 0.0625rem 0.0625rem 0.1875rem;
+  border-style: solid;
+  border-color: rgb(54, 57, 64);
+  border-image: initial;
+}
+</style></div></template></vite-error-overlay></body></html>
